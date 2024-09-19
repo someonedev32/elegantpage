@@ -1,14 +1,82 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<style>
-body {
-  background-image: url('elegantpage.jpg');
-  background-repeat: no-repeat;
-  background-attachment: auto;  
-  background-size: 100%;
-  background-color: #000000;
-}
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Web Design Agency</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
+<body>
+    <header>
+        <h1>Your Web Design Agency</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="hero">
+        <h2>Transforming Ideas into Stunning Websites</h2>
+        <a href="#contact" class="cta-button">Get Started</a>
+    </section>
+
+    <section id="about">
+        <h2>About Us</h2>
+        <p>We are a team of passionate designers and developers dedicated to creating beautiful and functional websites.</p>
+    </section>
+
+    <section id="services">
+        <h2>Our Services</h2>
+        <div class="service">
+            <h3>Web Design</h3>
+            <p>Creating visually appealing and user-friendly websites.</p>
+        </div>
+        <div class="service">
+            <h3>Development</h3>
+            <p>Building robust websites using the latest technologies.</p>
+        </div>
+        <div class="service">
+            <h3>SEO Services</h3>
+            <p>Optimizing your website to rank higher on search engines.</p>
+        </div>
+    </section>
+
+    <section id="portfolio">
+        <h2>Portfolio</h2>
+        <div class="portfolio-item">
+            <img src="project1.jpg" alt="Project 1">
+            <h4>Project Title</h4>
+            <p>Short description of the project.</p>
+        </div>
+    </section>
+
+    <section id="blog">
+        <h2>Insights and Tips</h2>
+        <article>
+            <h3>Latest Blog Post</h3>
+            <p>Summary of the blog post.</p>
+            <a href="#">Read more</a>
+        </article>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form>
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Your Web Design Agency. All rights reserved.</p>
+        <p><a href="#">Privacy Policy</a></p>
+    </footer>
+</body>
 </html>
