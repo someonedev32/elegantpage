@@ -37,15 +37,7 @@ nav ul li a {
     padding: 50px 0;
 }
 
-.cta-button {
-    background: #fff;
-    color: #007BFF;
-    padding: 10px 20px;
-    text-decoration: none;
-    border-radius: 5px;
-}
-
-section {
+#services {
     padding: 20px;
     text-align: center;
 }
@@ -54,9 +46,9 @@ section {
     margin: 20px 0;
 }
 
-.portfolio-item img {
-    max-width: 100%;
-    height: auto;
+#about, #contact {
+    padding: 20px;
+    text-align: center;
 }
 
 footer {
@@ -64,4 +56,30 @@ footer {
     padding: 1rem 0;
     background: #333;
     color: #fff;
+}
+
+form {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background: #007BFF;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #0056b3;
 }
