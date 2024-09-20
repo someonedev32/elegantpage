@@ -9,6 +9,7 @@
             margin: 0;
             height: 100vh;
             display: flex;
+            flex-direction: column;
             justify-content: center;
             align-items: center;
             font-family: Arial, sans-serif;
@@ -16,12 +17,15 @@
             font-weight: bold;
             text-align: center;
         }
+        .contact {
+            margin-top: 20px;
+            font-weight: normal;
+        }
     </style>
 </head>
 <body>
-    <div id="text">Digital Creative Agency from Kosovo </div>
-  <br> </br>
-    <div id="text"> info@elegantpage.net</div><br><br>
+    <div id="text">Digital Creative Agency from Kosovo</div>
+    <div class="contact">Email: info@elegantpage.net</div>
 
     <script>
         function getRandomColor() {
@@ -33,7 +37,4 @@
             return color;
         }
 
-        document.body.style.backgroundColor = getRandomColor();
-    </script>
-</body>
-</html>
+ 
