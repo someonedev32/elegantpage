@@ -3,67 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Agjencia Jonë</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Random Background Color</title>
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: Arial, sans-serif;
+            color: white;
+            font-weight: bold;
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <h1>Agjencia Jonë e Dizajnit</h1>
-        <nav>
-            <ul>
-                <li><a href="#services">Shërbimet</a></li>
-                <li><a href="#about">Rreth Nesh</a></li>
-                <li><a href="#contact">Kontakt</a></li>
-            </ul>
-        </nav>
-    </header>
+    <div id="text">Digital Creative Agency from Kosovo</div>
 
-    <section id="hero">
-        <h2>Transformoni prani tuaj online!</h2>
-        <p>Shërbime profesionale për çdo biznes.</p>
-    </section>
+    <script>
+        function getRandomColor() {
+            const letters = '0123456789ABCDEF';
+            let color = '#';
+            for (let i = 0; i < 6; i++) {
+                color += letters[Math.floor(Math.random() * 16)];
+            }
+            return color;
+        }
 
-    <section id="services">
-        <h2>Shërbimet Tona</h2>
-        <div class="service">
-            <h3>Dizajn Webi</h3>
-            <p>Krijojmë website të bukur dhe funksional për të përmbushur nevojat tuaja.</p>
-        </div>
-        <div class="service">
-            <h3>SEO</h3>
-            <p>Optimizojmë website tuaj për të arritur renditje më të larta në motorët e kërkimit.</p>
-        </div>
-        <div class="service">
-            <h3>Marketing Digjital</h3>
-            <p>Strategji efektive për të rritur dukshmërinë tuaj online dhe angazhimin e klientëve.</p>
-        </div>
-        <div class="service">
-            <h3>Mirëmbajtje Website</h3>
-            <p>Sigurojmë që website juaj të jetë gjithmonë në gjendje optimale dhe i përditësuar.</p>
-        </div>
-        <div class="service">
-            <h3>Siguri</h3>
-            <p>Implementojmë masat më të mira për të mbrojtur website tuaj nga sulmet dhe të dhënat e humbura.</p>
-        </div>
-    </section>
-
-    <section id="about">
-        <h2>Rreth Nesh</h2>
-        <p>Ne jemi një agjenci e specializuar në krijimin e zgjidhjeve digjitale që i përshtaten nevojave të klientëve tanë. Ekipi ynë përbëhet nga profesionistë me përvojë në dizajn, zhvillim, dhe marketing digjital.</p>
-    </section>
-
-    <section id="contact">
-        <h2>Kontakt</h2>
-        <form>
-            <input type="text" placeholder="Emri Juaj" required>
-            <input type="email" placeholder="Emaili Juaj" required>
-            <textarea placeholder="Mesazhi Juaj" required></textarea>
-            <button type="submit">Dërgo Mesazhin</button>
-        </form>
-    </section>
-
-    <footer>
-        <p>&copy; 2024 Agjencia Jonë. Të gjitha të drejtat e rezervuara.</p>
-    </footer>
+        document.body.style.backgroundColor = getRandomColor();
+    </script>
 </body>
 </html>
